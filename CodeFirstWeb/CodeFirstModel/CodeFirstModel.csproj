@@ -53,12 +53,29 @@
     <Compile Include="DAL\SchoolContext.cs" />
     <Compile Include="DAL\SchoolInitializer.cs" />
     <Compile Include="Enrollment.cs" />
+    <Compile Include="Migrations\201604181412091_InitialCreate.cs" />
+    <Compile Include="Migrations\201604181412091_InitialCreate.Designer.cs">
+      <DependentUpon>201604181412091_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604181420210_Initial.cs" />
+    <Compile Include="Migrations\201604181420210_Initial.Designer.cs">
+      <DependentUpon>201604181420210_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201604181412091_InitialCreate.resx">
+      <DependentUpon>201604181412091_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604181420210_Initial.resx">
+      <DependentUpon>201604181420210_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

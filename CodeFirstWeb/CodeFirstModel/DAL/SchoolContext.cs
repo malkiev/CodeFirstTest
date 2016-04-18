@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CodeFirstModel.DAL
 {
-    class SchoolContext:DbContext
+    public class SchoolContext:DbContext
     {
         public SchoolContext(): base("SchoolContext")
         {
